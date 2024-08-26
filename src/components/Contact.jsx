@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const Contact = () => {
   return (
-   <section id="contact" className=" h-[100vh] flex justify-between items-center gap-8 bg-gradient-to-b from-[#16166B] to-black py-10 md:flex-row flex-col px-2">
+   <section id="contact" className=" h-[100vh] flex justify-between  items-center gap-8 bg-gradient-to-b from-[#16166B] to-black py-10 md:flex-row flex-col md:px-20 px-2">
          <motion.div   whileInView={{ opacity: 1,scale:1 }}
                 initial={{ opacity: 0,scale:0 }}
                 transition={{ duration: 1.5 }}
