@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0395c6;
+  background-image: radial-gradient(
+      circle,
+      #9EB9D4,
+       #16166B 30%,
+      rgba(9, 27, 225, 0.226)  0%
+    ),
+    radial-gradient(
+      circle at 20px 40px,
+      rgb(233, 228, 228),
+      #333 20%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 600px 100px,
+      rgb(233, 228, 228),
+      #333 10%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 800px 100px,
+      rgb(233, 228, 228),
+      #333 10%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 700px 500px,
+      rgb(233, 228, 228),
+      #333 2%,
+      rgba(88, 84, 84, 0.123) 0%
+    ),
+    radial-gradient(
+      circle at 200px 400px,
+      rgb(233, 228, 228),
+      #333 1%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 300px 700px,
+      rgb(233, 228, 228),
+      #333 15%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 900px 500px,
+      rgb(233, 228, 228),
+      #333 20%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 650px 400px,
+      rgb(233, 228, 228),
+      #333 10%,
+      rgba(88, 84, 84, 0) 0%
+    ),
+    radial-gradient(
+      circle at 600px 600px,
+      rgb(233, 228, 228),
+      #333 1%,
+      rgba(88, 84, 84, 0.959) 0%
+    );
+}
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(-45deg,transparent,#333) ;
+}
+.chakra{
+  filter: hue-rotate(250deg)  grayscale(0.6);
+  z-index: 3;
+  animation: chakra 4.5s linear infinite;
+}
+.bgs:hover  .chakra{
+  animation-play-state: paused;
+}
+
+@keyframes chakra {
+  to{
+    rotate: 1turn;
+  }
+}
+.stroke {
+  color: #fff;
+  -webkit-text-stroke: 3px  rgb(10, 166, 223);
+}
+.card {
+  display: grid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  grid-template-rows: 8rem 1fr 2rem;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  transition: all 500ms;
+  padding: 1rem;
+}
+.card button {
+  opacity: 0;
+}
+.card:hover button {
+  opacity: 1;
+}
+.card:hover {
+  box-shadow: 0.5rem 0.5rem 1rem #16166B,
+  -0.5rem -0.5rem 1rem #16166B;
+}
